@@ -1,0 +1,27 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+
+	<!-- wp:post-featured-image {"aspectRatio":"16/9","style":{"border":{"radius":"12px"},"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}}} /-->
+
+	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|30","margin":{"bottom":"var:preset|spacing|40"}}},"layout":{"type":"flex","flexWrap":"wrap"}} -->
+	<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--40)">
+		<!-- wp:post-date {"fontSize":"small","textColor":"tertiary"} /-->
+		<!-- wp:post-terms {"term":"category","fontSize":"small","textColor":"tertiary"} /-->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:post-title {"level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|50"}}}} /-->
+
+	<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+
+	<!-- wp:separator {"className":"is-style-accent-rule","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+	<hr class="wp-block-separator has-alpha-channel-opacity is-style-accent-rule" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"/>
+	<!-- /wp:separator -->
+
+	<!-- wp:pattern {"slug":"giving-day/donate-cta-banner"} /-->
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

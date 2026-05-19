@@ -1,0 +1,36 @@
+/*
+ * Giving Day — editor-only styles.
+ *
+ * Front-end styling comes from theme.json. Anything here is for the
+ * block editor's iframe only (post editor + Site Editor).
+ */
+
+.editor-styles-wrapper .sponsor-grid img,
+.editor-styles-wrapper .donor-wall-grid img {
+	filter: grayscale(100%);
+	opacity: 0.7;
+	transition: filter 200ms ease, opacity 200ms ease;
+}
+
+.editor-styles-wrapper .sponsor-grid img:hover,
+.editor-styles-wrapper .donor-wall-grid img:hover {
+	filter: grayscale(0%);
+	opacity: 1;
+}
+
+.editor-styles-wrapper .is-style-card-elevated,
+.editor-styles-wrapper .is-style-card-outline {
+	transition: box-shadow 200ms ease, transform 200ms ease;
+}
+
+.editor-styles-wrapper .is-style-card-elevated:hover {
+	transform: translateY(-2px);
+}
+
+.editor-styles-wrapper .is-style-eyebrow {
+	display: inline-block;
+}
+
+.editor-styles-wrapper .header-donate-cta .wp-block-button {
+	margin: 0;
+}

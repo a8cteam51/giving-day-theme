@@ -1,0 +1,47 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+
+	<!-- wp:paragraph {"fontSize":"small","style":{"color":{"text":"var:preset|color|tertiary"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
+	<p class="has-text-color has-small-font-size" style="color:var(--wp--preset--color--tertiary);margin-bottom:var(--wp--preset--spacing--30)"><a href="/beneficiaries">← All cause areas</a></p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:heading {"className":"is-style-eyebrow"} -->
+	<h2 class="wp-block-heading is-style-eyebrow">Cause area</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:query-title {"type":"archive","level":1,"showPrefix":false,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} /-->
+
+	<!-- wp:term-description {"textColor":"tertiary","style":{"typography":{"fontSize":"var:preset|font-size|large"},"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}}} /-->
+
+	<!-- wp:query {"queryId":0,"query":{"perPage":12,"pages":0,"offset":0,"postType":"giving_beneficiary","order":"asc","orderBy":"title","inherit":true}} -->
+	<div class="wp-block-query">
+		<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+			<!-- wp:pattern {"slug":"giving-day/beneficiary-card"} /-->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:paragraph {"align":"center"} -->
+			<p class="has-text-align-center">No beneficiaries in this cause yet.</p>
+			<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
+
+	<!-- wp:separator {"className":"is-style-accent-rule","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+	<hr class="wp-block-separator has-alpha-channel-opacity is-style-accent-rule" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"/>
+	<!-- /wp:separator -->
+
+	<!-- wp:pattern {"slug":"giving-day/donate-cta-banner"} /-->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

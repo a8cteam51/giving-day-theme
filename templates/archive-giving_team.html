@@ -1,0 +1,51 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+
+	<!-- wp:heading {"textAlign":"center","className":"is-style-eyebrow"} -->
+	<h2 class="wp-block-heading has-text-align-center is-style-eyebrow">Teams</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:heading {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} -->
+	<h1 class="wp-block-heading has-text-align-center" style="margin-bottom:var(--wp--preset--spacing--40)">Teams making it happen</h1>
+	<!-- /wp:heading -->
+
+	<!-- wp:paragraph {"align":"center","fontSize":"large","style":{"color":{"text":"var:preset|color|tertiary"},"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}}} -->
+	<p class="has-text-align-center has-text-color has-large-font-size" style="color:var(--wp--preset--color--tertiary);margin-bottom:var(--wp--preset--spacing--60)">Find a team, cheer them on, and give in their name.</p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:giving-day/leaderboard-tabs /-->
+
+	<!-- wp:spacer {"height":"var:preset|spacing|60"} -->
+	<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
+	<!-- wp:heading {"level":2} -->
+	<h2 class="wp-block-heading">All teams</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:query {"queryId":0,"query":{"perPage":12,"pages":0,"offset":0,"postType":"giving_team","order":"asc","orderBy":"title","inherit":false}} -->
+	<div class="wp-block-query">
+		<!-- wp:post-template {"layout":{"type":"grid","columnCount":3}} -->
+			<!-- wp:pattern {"slug":"giving-day/team-card"} /-->
+		<!-- /wp:post-template -->
+
+		<!-- wp:query-pagination {"layout":{"type":"flex","justifyContent":"center"}} -->
+			<!-- wp:query-pagination-previous /-->
+			<!-- wp:query-pagination-numbers /-->
+			<!-- wp:query-pagination-next /-->
+		<!-- /wp:query-pagination -->
+
+		<!-- wp:query-no-results -->
+			<!-- wp:paragraph {"align":"center"} -->
+			<p class="has-text-align-center">No teams yet. Check back soon.</p>
+			<!-- /wp:paragraph -->
+		<!-- /wp:query-no-results -->
+	</div>
+	<!-- /wp:query -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

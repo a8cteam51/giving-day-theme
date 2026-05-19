@@ -1,0 +1,39 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+
+	<!-- wp:heading {"textAlign":"center","className":"is-style-eyebrow"} -->
+	<h2 class="wp-block-heading has-text-align-center is-style-eyebrow">Live results</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:post-title {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} /-->
+
+	<!-- wp:paragraph {"align":"center","fontSize":"large","style":{"color":{"text":"var:preset|color|tertiary"},"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}}} -->
+	<p class="has-text-align-center has-text-color has-large-font-size" style="color:var(--wp--preset--color--tertiary);margin-bottom:var(--wp--preset--spacing--60)">See who's giving and who's making it count.</p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:giving-day/totals {"mode":"auto","showDonorCount":true,"showGoal":true} /-->
+
+	<!-- wp:spacer {"height":"var:preset|spacing|60"} -->
+	<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
+	<!-- wp:giving-day/leaderboard-tabs /-->
+
+	<!-- wp:spacer {"height":"var:preset|spacing|60"} -->
+	<div style="height:var(--wp--preset--spacing--60)" aria-hidden="true" class="wp-block-spacer"></div>
+	<!-- /wp:spacer -->
+
+	<!-- wp:heading {"level":2} -->
+	<h2 class="wp-block-heading">Active matches</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:giving-day/match-my-gift {"matchSelection":"auto","variant":"card"} /-->
+
+	<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

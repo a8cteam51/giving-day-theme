@@ -1,0 +1,68 @@
+<!-- wp:template-part {"slug":"header","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--60)">
+
+	<!-- wp:paragraph {"fontSize":"small","style":{"color":{"text":"var:preset|color|tertiary"},"spacing":{"margin":{"bottom":"var:preset|spacing|30"}}}} -->
+	<p class="has-text-color has-small-font-size" style="color:var(--wp--preset--color--tertiary);margin-bottom:var(--wp--preset--spacing--30)"><a href="/teams">← All teams</a></p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:group {"layout":{"type":"flex","verticalAlignment":"center","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|40","margin":{"bottom":"var:preset|spacing|50"}}}} -->
+	<div class="wp-block-group" style="margin-bottom:var(--wp--preset--spacing--50)">
+		<!-- wp:post-featured-image {"width":"96px","height":"96px","style":{"border":{"radius":"9999px"}}} /-->
+		<!-- wp:group {"layout":{"type":"constrained"}} -->
+		<div class="wp-block-group">
+			<!-- wp:post-terms {"term":"giving_team_group","fontSize":"small","textColor":"tertiary"} /-->
+			<!-- wp:post-title {"level":1} /-->
+		</div>
+		<!-- /wp:group -->
+	</div>
+	<!-- /wp:group -->
+
+	<!-- wp:columns {"verticalAlignment":"top","style":{"spacing":{"blockGap":{"top":"var:preset|spacing|50","left":"var:preset|spacing|60"}}}} -->
+	<div class="wp-block-columns are-vertically-aligned-top">
+
+		<!-- wp:column {"verticalAlignment":"top","width":"62%"} -->
+		<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:62%">
+			<!-- wp:post-excerpt {"fontSize":"large"} /-->
+			<!-- wp:post-content {"layout":{"type":"constrained"}} /-->
+
+			<!-- wp:heading {"level":2,"style":{"spacing":{"margin":{"top":"var:preset|spacing|60"}}}} -->
+			<h2 class="wp-block-heading" style="margin-top:var(--wp--preset--spacing--60)">Top supporters of this team</h2>
+			<!-- /wp:heading -->
+
+			<!-- wp:giving-day/leaderboard {"dimension":"top_donors","limit":10,"showAvatar":true} /-->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"verticalAlignment":"top","width":"38%"} -->
+		<div class="wp-block-column is-vertically-aligned-top" style="flex-basis:38%">
+			<!-- wp:group {"className":"is-style-card-elevated","layout":{"type":"constrained"}} -->
+			<div class="wp-block-group is-style-card-elevated">
+				<!-- wp:heading {"level":3,"className":"is-style-eyebrow"} -->
+				<h3 class="wp-block-heading is-style-eyebrow">Team progress</h3>
+				<!-- /wp:heading -->
+
+				<!-- wp:giving-day/goal-progress {"orientation":"vertical","showPercent":true,"showRaised":true,"showGoal":true,"showDonorCount":true,"animateBar":true} /-->
+
+				<!-- wp:giving-day/totals {"mode":"auto","showDonorCount":true} /-->
+
+				<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"stretch"}} -->
+				<div class="wp-block-buttons">
+					<!-- wp:button {"className":"is-style-donate-pill","width":100} -->
+					<div class="wp-block-button is-style-donate-pill has-custom-width wp-block-button__width-100"><a class="wp-block-button__link wp-element-button" href="/donate">Give for this team</a></div>
+					<!-- /wp:button -->
+				</div>
+				<!-- /wp:buttons -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+
+	</div>
+	<!-- /wp:columns -->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"footer"} /-->

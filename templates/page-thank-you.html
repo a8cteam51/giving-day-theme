@@ -1,0 +1,42 @@
+<!-- wp:template-part {"slug":"header-minimal","tagName":"header"} /-->
+
+<!-- wp:group {"tagName":"main","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"layout":{"type":"constrained"}} -->
+<main class="wp-block-group" style="padding-top:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70)">
+
+	<!-- wp:heading {"textAlign":"center","className":"is-style-eyebrow"} -->
+	<h2 class="wp-block-heading has-text-align-center is-style-eyebrow">Thank you</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:post-title {"textAlign":"center","level":1,"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|40"}}}} /-->
+
+	<!-- wp:post-content {"layout":{"type":"constrained"},"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|60"}}}} /-->
+
+	<!-- wp:paragraph {"align":"center","style":{"color":{"text":"var:preset|color|tertiary"}}} -->
+	<p class="has-text-align-center has-text-color" style="color:var(--wp--preset--color--tertiary)">Share your gift and inspire others.</p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:social-links {"size":"has-large-icon-size","openInNewTab":true,"className":"is-style-pill-shape","layout":{"type":"flex","justifyContent":"center"}} -->
+	<ul class="wp-block-social-links has-large-icon-size is-style-pill-shape">
+		<!-- wp:social-link {"url":"#","service":"twitter","label":"Share on X"} /-->
+		<!-- wp:social-link {"url":"#","service":"facebook","label":"Share on Facebook"} /-->
+		<!-- wp:social-link {"url":"#","service":"linkedin","label":"Share on LinkedIn"} /-->
+		<!-- wp:social-link {"url":"#","service":"mail","label":"Email a friend"} /-->
+	</ul>
+	<!-- /wp:social-links -->
+
+	<!-- wp:separator {"className":"is-style-accent-rule","style":{"spacing":{"margin":{"top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}}} -->
+	<hr class="wp-block-separator has-alpha-channel-opacity is-style-accent-rule" style="margin-top:var(--wp--preset--spacing--60);margin-bottom:var(--wp--preset--spacing--60)"/>
+	<!-- /wp:separator -->
+
+	<!-- wp:heading {"level":2,"textAlign":"center"} -->
+	<h2 class="wp-block-heading has-text-align-center">Recent givers</h2>
+	<!-- /wp:heading -->
+
+	<!-- wp:giving-day/leaderboard {"dimension":"top_donors","limit":12,"showAvatar":true,"showAmount":false} /-->
+
+	<!-- wp:pattern {"slug":"giving-day/donate-cta-banner"} /-->
+
+</main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer-tagline","tagName":"footer"} /-->
