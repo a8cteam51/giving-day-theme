@@ -8,8 +8,8 @@
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"backgroundColor":"primary","textColor":"background","gradient":"primary-accent","layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-background-color has-primary-color has-text-color has-background has-primary-accent-gradient-background has-background-gradient" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--40)">
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|70","right":"var:preset|spacing|40","left":"var:preset|spacing|40"}}},"backgroundColor":"primary","textColor":"background","gradient":"primary-secondary","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-background-color has-primary-color has-text-color has-background has-primary-secondary-gradient-background has-background-gradient" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--40)">
 
 	<!-- wp:heading {"textAlign":"center","level":2,"className":"is-style-eyebrow","style":{"color":{"text":"var:preset|color|accent"}}} -->
 	<h2 class="wp-block-heading has-text-align-center has-text-color is-style-eyebrow" style="color:var(--wp--preset--color--accent)"><?php esc_html_e( 'One day. Every gift.', 'giving-day' ); ?></h2>

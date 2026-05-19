@@ -24,6 +24,11 @@
 			],
 			"gradients": [
 				{
+					"slug": "primary-secondary",
+					"name": "Primary to Secondary",
+					"gradient": "linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--secondary) 100%)"
+				},
+				{
 					"slug": "primary-accent",
 					"name": "Primary to Accent",
 					"gradient": "linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--accent) 100%)"

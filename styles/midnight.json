@@ -18,7 +18,7 @@
 			],
 			"gradients": [
 				{
-					"slug": "primary-accent",
+					"slug": "primary-secondary",
 					"name": "Night sky",
 					"gradient": "linear-gradient(135deg, var(--wp--preset--color--primary) 0%, var(--wp--preset--color--secondary) 55%, var(--wp--preset--color--accent) 100%)"
 				}
