@@ -8,12 +8,32 @@
 				{ "slug": "primary",    "color": "#0B4A6F", "name": "Primary" },
 				{ "slug": "secondary",  "color": "#1E6091", "name": "Secondary" },
 				{ "slug": "tertiary",   "color": "#6B8AA3", "name": "Muted" },
-				{ "slug": "accent",     "color": "#06B6D4", "name": "Accent" },
+				{ "slug": "accent",     "color": "#1C69D4", "name": "Accent" },
 				{ "slug": "background", "color": "#F8FAFC", "name": "Background" },
 				{ "slug": "base",       "color": "#F8FAFC", "name": "Base" },
 				{ "slug": "base-2",     "color": "#E2ECF3", "name": "Base alt" },
-				{ "slug": "contrast",   "color": "#031927", "name": "Contrast" }
+				{ "slug": "contrast",   "color": "#031927", "name": "Contrast" },
+				{ "slug": "sky",        "color": "#64B4FA", "name": "Sky" }
 			]
+		}
+	},
+	"styles": {
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter)",
+					"fontWeight": "500",
+					"letterSpacing": "-0.035em",
+					"lineHeight": "1.0"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter)",
+					"fontWeight": "500",
+					"letterSpacing": "-0.025em"
+				}
+			}
 		}
 	}
 }
