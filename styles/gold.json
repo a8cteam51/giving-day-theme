@@ -1,0 +1,61 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"title": "Gold",
+	"settings": {
+		"color": {
+			"palette": [
+				{ "slug": "primary",    "color": "#2E1A05", "name": "Primary" },
+				{ "slug": "secondary",  "color": "#5B3A1A", "name": "Secondary" },
+				{ "slug": "tertiary",   "color": "#8C6B3C", "name": "Muted" },
+				{ "slug": "accent",     "color": "#FF5F00", "name": "Accent" },
+				{ "slug": "background", "color": "#FFD400", "name": "Background" },
+				{ "slug": "base",       "color": "#FFFFFF", "name": "Base" },
+				{ "slug": "base-2",     "color": "#FFC300", "name": "Base alt" },
+				{ "slug": "contrast",   "color": "#1A0F00", "name": "Contrast" },
+				{ "slug": "marigold",   "color": "#FF8C00", "name": "Marigold" }
+			]
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--background)",
+			"text": "var(--wp--preset--color--primary)"
+		},
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter)",
+					"fontWeight": "900",
+					"letterSpacing": "-0.04em",
+					"lineHeight": "0.98"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inter)",
+					"fontWeight": "900",
+					"letterSpacing": "-0.035em"
+				}
+			},
+			"button": {
+				"color": {
+					"background": "var(--wp--preset--color--accent)",
+					"text": "var(--wp--preset--color--base)"
+				},
+				":hover": {
+					"color": {
+						"background": "var(--wp--preset--color--primary)",
+						"text": "var(--wp--preset--color--base)"
+					}
+				},
+				":focus": {
+					"color": {
+						"background": "var(--wp--preset--color--primary)",
+						"text": "var(--wp--preset--color--base)"
+					}
+				}
+			}
+		}
+	}
+}
