@@ -25,12 +25,15 @@
 
 	<!-- wp:post-excerpt {"moreText":"","showMoreOnNewLine":false,"excerptLength":20} /-->
 
-	<!-- wp:buttons -->
-	<div class="wp-block-buttons">
-		<!-- wp:button {"className":"is-style-ghost","fontSize":"small"} -->
-		<div class="wp-block-button has-custom-font-size has-small-font-size is-style-ghost"><a class="wp-block-button__link wp-element-button" href="/donate"><?php esc_html_e( 'Give for this team', 'giving-day' ); ?></a></div>
-		<!-- /wp:button -->
-	</div>
-	<!-- /wp:buttons -->
+	<?php
+	$gd_donate_attrs = wp_json_encode(
+		array(
+			'targetType' => 'auto',
+			'label'      => __( 'Give for this team', 'giving-day' ),
+			'className'  => 'wp-block-button is-style-ghost has-custom-font-size has-small-font-size',
+		)
+	);
+	?>
+	<!-- wp:giving-day/donate-button <?php echo $gd_donate_attrs; ?> /-->
 </div>
 <!-- /wp:group -->
