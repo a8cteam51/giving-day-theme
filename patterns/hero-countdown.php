@@ -23,9 +23,16 @@
 
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"margin":{"top":"var:preset|spacing|50"}}}} -->
 	<div class="wp-block-buttons" style="margin-top:var(--wp--preset--spacing--50)">
-		<!-- wp:button {"className":"is-style-donate-pill"} -->
-		<div class="wp-block-button is-style-donate-pill"><a class="wp-block-button__link wp-element-button" href="/donate"><?php esc_html_e( 'Give now', 'giving-day' ); ?></a></div>
-		<!-- /wp:button -->
+		<?php
+		$gd_donate_attrs = wp_json_encode(
+			array(
+				'targetType' => 'none',
+				'label'      => __( 'Give now', 'giving-day' ),
+				'className'  => 'wp-block-button is-style-donate-pill',
+			)
+		);
+		?>
+		<!-- wp:giving-day/donate-button <?php echo $gd_donate_attrs; ?> /-->
 		<!-- wp:button {"className":"is-style-ghost","style":{"color":{"text":"var:preset|color|background"},"border":{"color":"var:preset|color|background"}}} -->
 		<div class="wp-block-button is-style-ghost"><a class="wp-block-button__link has-text-color wp-element-button" href="/leaderboard" style="border-color:var(--wp--preset--color--background);color:var(--wp--preset--color--background)"><?php esc_html_e( 'See the leaderboard', 'giving-day' ); ?></a></div>
 		<!-- /wp:button -->

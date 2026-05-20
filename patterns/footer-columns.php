@@ -28,8 +28,13 @@
 			<!-- wp:heading {"level":4,"fontSize":"small","style":{"typography":{"textTransform":"uppercase","letterSpacing":"0.08em"}}} -->
 			<h4 class="wp-block-heading has-small-font-size" style="letter-spacing:0.08em;text-transform:uppercase"><?php esc_html_e( 'Give', 'giving-day' ); ?></h4>
 			<!-- /wp:heading -->
+			<?php
+			$gd_donate_url = class_exists( 'Team51\\GivingDay\\Data\\DonationUrl' )
+				? \Team51\GivingDay\Data\DonationUrl::build( 'none' )
+				: home_url( '/donate' );
+			?>
 			<!-- wp:paragraph {"fontSize":"small"} -->
-			<p class="has-small-font-size"><a href="/donate"><?php esc_html_e( 'Make a gift', 'giving-day' ); ?></a></p>
+			<p class="has-small-font-size"><a href="<?php echo esc_url( $gd_donate_url ); ?>"><?php esc_html_e( 'Make a gift', 'giving-day' ); ?></a></p>
 			<!-- /wp:paragraph -->
 			<!-- wp:paragraph {"fontSize":"small"} -->
 			<p class="has-small-font-size"><a href="/beneficiaries"><?php esc_html_e( 'Beneficiaries', 'giving-day' ); ?></a></p>

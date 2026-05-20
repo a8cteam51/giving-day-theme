@@ -27,9 +27,18 @@
 
 		<!-- wp:buttons -->
 		<div class="wp-block-buttons">
-			<!-- wp:button {"backgroundColor":"background","textColor":"primary","className":"is-style-donate-pill"} -->
-			<div class="wp-block-button is-style-donate-pill"><a class="wp-block-button__link has-primary-color has-background-background-color has-text-color has-background wp-element-button" href="/donate"><?php esc_html_e( 'Give now', 'giving-day' ); ?></a></div>
-			<!-- /wp:button -->
+			<?php
+			$gd_donate_attrs = wp_json_encode(
+				array(
+					'targetType'      => 'none',
+					'label'           => __( 'Give now', 'giving-day' ),
+					'className'       => 'wp-block-button is-style-donate-pill',
+					'backgroundColor' => 'background',
+					'textColor'       => 'primary',
+				)
+			);
+			?>
+			<!-- wp:giving-day/donate-button <?php echo $gd_donate_attrs; ?> /-->
 		</div>
 		<!-- /wp:buttons -->
 	</div>

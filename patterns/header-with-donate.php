@@ -27,9 +27,16 @@
 
 			<!-- wp:buttons -->
 			<div class="wp-block-buttons">
-				<!-- wp:button {"className":"is-style-donate-pill"} -->
-				<div class="wp-block-button is-style-donate-pill"><a class="wp-block-button__link wp-element-button" href="/donate"><?php esc_html_e( 'Donate', 'giving-day' ); ?></a></div>
-				<!-- /wp:button -->
+				<?php
+				$gd_donate_attrs = wp_json_encode(
+					array(
+						'targetType' => 'none',
+						'label'      => __( 'Donate', 'giving-day' ),
+						'className'  => 'wp-block-button is-style-donate-pill',
+					)
+				);
+				?>
+				<!-- wp:giving-day/donate-button <?php echo $gd_donate_attrs; ?> /-->
 			</div>
 			<!-- /wp:buttons -->
 		</div>
