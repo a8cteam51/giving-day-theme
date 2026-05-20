@@ -127,7 +127,7 @@
 		}
 	},
 	"styles": {
-		"css": ".site-header .wp-block-buttons{flex-shrink:0}.site-header .wp-block-button__link,.is-style-donate-pill .wp-block-button__link{white-space:nowrap}.site-header .wp-block-site-title{white-space:nowrap}",
+		"css": ".site-header .wp-block-buttons{flex-shrink:0}.site-header .wp-block-button__link,.is-style-donate-pill .wp-block-button__link{white-space:nowrap}.site-header .wp-block-site-title{white-space:nowrap}.site-header .is-style-donate-pill .wp-block-button__link{padding-top:var(--wp--preset--spacing--20);padding-bottom:var(--wp--preset--spacing--20);padding-left:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);font-size:var(--wp--preset--font-size--medium);line-height:1.2}",
 		"color": {
 			"background": "var(--wp--preset--color--background)",
 			"text": "var(--wp--preset--color--primary)"
