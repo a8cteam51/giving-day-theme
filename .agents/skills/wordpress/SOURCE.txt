@@ -1,0 +1,4 @@
+Upstream: https://github.com/WordPress/agent-skills
+Commit:   c5c0697b120ec00e8fcf6a265f161c61dbc2581c
+Extracted: 2026-07-09 11:34:45 UTC
+Only the skills/ directory was included.
